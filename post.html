@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading… — The Chronicle</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-dot"></span>
+        Chronicle
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#posts">Archive</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- POST HERO — populated by JS -->
+  <div id="post-hero-skeleton">
+    <div style="border-bottom:3px solid #0A0A0A;display:grid;grid-template-columns:1fr 1fr;min-height:460px">
+      <div style="padding:4rem 3rem;background:#0A0A0A;border-right:3px solid #0A0A0A;display:flex;flex-direction:column;gap:1.5rem;justify-content:space-between">
+        <div class="skeleton" style="height:28px;width:100px"></div>
+        <div>
+          <div class="skeleton" style="height:22px;width:90px;margin-bottom:1.2rem"></div>
+          <div class="skeleton" style="height:60px;width:90%;margin-bottom:0.5rem;background:rgba(255,255,255,0.08)"></div>
+          <div class="skeleton" style="height:60px;width:70%;background:rgba(255,255,255,0.08)"></div>
+        </div>
+        <div style="display:flex;gap:1.5rem">
+          <div class="skeleton" style="height:14px;width:100px;background:rgba(255,255,255,0.08)"></div>
+          <div class="skeleton" style="height:14px;width:70px;background:rgba(255,255,255,0.08)"></div>
+        </div>
+      </div>
+      <div style="background:repeating-linear-gradient(45deg,#E8E6E1 0,#E8E6E1 2px,#F2F0EB 2px,#F2F0EB 14px)"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 300px;border-top:3px solid #0A0A0A">
+      <div style="padding:4rem 3rem;border-right:3px solid #0A0A0A">
+        <div class="skeleton" style="height:14px;width:100%;margin-bottom:0.9rem"></div>
+        <div class="skeleton" style="height:14px;width:100%;margin-bottom:0.9rem"></div>
+        <div class="skeleton" style="height:14px;width:85%;margin-bottom:0.9rem"></div>
+        <div class="skeleton" style="height:14px;width:100%;margin-bottom:0.9rem"></div>
+        <div class="skeleton" style="height:14px;width:92%;margin-bottom:0.9rem"></div>
+        <div class="skeleton" style="height:14px;width:78%"></div>
+      </div>
+      <div style="background:#F2F0EB;padding:2.5rem 2rem">
+        <div class="skeleton" style="height:16px;width:80px;margin-bottom:1.5rem"></div>
+        <div class="skeleton" style="height:32px;width:60px;margin-bottom:0.5rem"></div>
+        <div class="skeleton" style="height:12px;width:100px;margin-bottom:1.5rem"></div>
+        <div class="skeleton" style="height:32px;width:50px;margin-bottom:0.5rem"></div>
+        <div class="skeleton" style="height:12px;width:80px"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Actual post content -->
+  <div id="post-content" style="display:none"></div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">Chronicle</div>
+    <div class="footer-copy">
+      &copy; 2024 <strong>&nbsp;Chronicle&nbsp;</strong> &mdash; All rights reserved.
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/post.js"></script>
+</body>
+</html>
